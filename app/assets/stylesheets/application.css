@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+ body {
+    background-image: url("background_1.jpg"); /* Background image for all pages */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.jumbotron {
+    width: 100%;
+    margin: 6% 0% ;
+    padding: 5%;
+    background-color: #35D4CB;
+}
+.btn.btn-primary.btn-lg {
+    background-color: #000000;
+    border-color: #000000;
+    margin-top: -5%;
+    transition: 0.5s ease-in-out;
+}
+.btn.btn-primary.btn-lg:hover {
+    background-color: #35D4CB;
+    transform: scale(1.0);
+    border-color: #35D4CB;
+}
