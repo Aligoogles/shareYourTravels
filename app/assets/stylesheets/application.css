@@ -23,3 +23,43 @@
     transform: scale(1.0);
     border-color: #35D4CB;
 }
+
+/*Post Page Styling */
+#posts {
+    width: 100%;
+    margin: 6% 0% ;
+    padding: 5%;
+    background-color: #35D4CB;
+}
+.post_header {
+    text-align: center;
+}
+.post_container {
+    padding: 3%;
+}
+.author{
+    background-color: #ffffff; 
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    float: left;
+    margin-bottom: 3%;
+    padding: 1% 1% 0.7% 1%;
+}
+.post-date{
+    background-color: #ffffff; 
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    float: right;
+    margin-bottom: 3%;
+    padding: 1% 1% 0.7% 1%;
+}
+.comment{
+    background-color: #ffffff; 
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 1%;
+}

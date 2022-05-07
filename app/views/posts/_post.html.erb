@@ -1,19 +1,27 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Comment:</strong>
-    <%= post.comment %>
-  </p>
+<div class="post_container">
+  <div id="<%= dom_id post %>">
 
-  <p>
-    <strong>Post date:</strong>
-    <%= post.post_date %>
-  </p>
+    <div class="author">
+      <p>
+        <strong>Author:</strong>
+        <%= post.author %>
+      </p>
+    </div>
 
-  <p>
-    <strong>Author:</strong>
-    <%= post.author %>
-  </p>
+    <div class="post-date">
+      <p>
+        <strong>Post date:</strong>
+        <%= post.post_date %>
+      </p>
+    </div>
 
+    <div class="comment">
+      <p>
+        <strong>Comment:</strong>
+        <%= post.comment %>
+      </p>
+    </div>
+  </div>
 </div>
 
 
