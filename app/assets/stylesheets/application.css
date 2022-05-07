@@ -1,6 +1,6 @@
 
  body {
-    background-image: url("background_1.jpg"); /* Background image for all pages */
+    /*background-image: url("background_1.jpg"); /* Background image for all pages */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
