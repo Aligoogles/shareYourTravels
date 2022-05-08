@@ -1,5 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 
 <div id="posts">
   <h1 class="post_header">Chat and Share Your Travel Experiences</h1>
@@ -7,7 +5,10 @@
   <% @posts.each do |post| %>
     <%= render post %>
     <p>
-      <%= link_to "Show this post", post %>
+      <% if current_user.email == post.author %>
+      <%= link_to "Edit this post", edit_post_path(post) %> 
+      <%= button_to "Destroy this post", post, method: :delete %>
+      <% end %>
     </p>
   <% end %>
 </div>
