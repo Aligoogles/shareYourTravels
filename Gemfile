@@ -48,7 +48,7 @@ gem "bootsnap", require: false
 
 # Start of extra items added by student 21113131
 # implementing bootsrap for designing and layout
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 
 # User profile management
 gem 'devise', '~> 4.8', '>= 4.8.1'
