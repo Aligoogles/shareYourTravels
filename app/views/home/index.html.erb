@@ -9,6 +9,10 @@
 
 <div class="all-btn">
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/posts" role="button">Start Chatting</a>
+  <% if user_signed_in? %>
+    <%= link_to 'Start Chatting', posts_path, class:"btn btn-primary btn-lg" %>
+  <% else %>
+    <%= link_to 'Start Chatting', new_user_session_path, class:"btn btn-primary btn-lg" %>
+  <% end %>
   </p>
 </div>

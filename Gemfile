@@ -45,11 +45,15 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 # gem "sassc-rails"
 
+
+# Start of extra items added by student 21113131
 # implementing bootsrap for designing and layout
 gem 'bootstrap', '~> 4.0.0'
 
-# User profile
+# User profile management
 gem 'devise', '~> 4.8', '>= 4.8.1'
+#End of extra items added by student 21113131
+
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
