@@ -12,8 +12,8 @@
   <% end %>
 
   <div>
-    <%= form.label :comment, style: "display: block" %>
-    <%= form.text_area :comment %>
+    <%= form.label :comment, style: "display: none" %>
+    <%= form.text_area :comment, class:"post-box" %>
   </div>
 
   <div>
@@ -27,6 +27,6 @@
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class:"white-button"%>
   </div>
 <% end %>

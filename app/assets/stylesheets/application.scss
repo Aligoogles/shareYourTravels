@@ -5,12 +5,25 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
+/* Blue Box */
 .blue-container {
     width: 100%;
-    margin: 6% 0% ;
-    padding: 2% 4% 5% 4%;
+    margin: 6% 0%;
+    padding: 1% 4% 1% 4%;
     background-color: #35D4CB;
 }
+
+/*Headings*/
+.headings {
+    padding: 3% 0%;
+}
+
+/*General padding*/
+.bottom-padding {
+    padding-bottom: 5%;
+    padding-top: 3%;
+}
+
 /* Buttons */
 .btn.btn-primary.btn-lg {
     background-color: #101010;
@@ -48,7 +61,7 @@
     text-decoration: none;
     padding: 1% 3%;
     font-weight: 600;
-    margin: 1% 0%;
+    margin: 2.5% 0% 0% 0%;
     border-style: solid;
     border: 0px 5px;
 }
@@ -62,7 +75,6 @@
     margin: 2% 0% 5% 0%;
 }
 
-
 /* NavBar */
 .container-fluid {
     padding: 0px;
@@ -70,51 +82,6 @@
 .nav-item {
     margin: 0px 15px;
     background-color: #101010;
-}
-
-
-/*Post Page Styling */
-#posts {
-    width: 100%;
-    background-color: #35D4CB;
-    margin-top: 5%;
-}
-.post_header {
-    text-align: center;    
-}
-.author{
-    background-color: #ffffff; 
-    display: flex;
-    width: 60%;
-    flex-direction: column;
-    float: left;
-    margin-bottom: 2%;
-    padding: 1% 1% 0.7% 1%;
-}
-.post-date{
-    background-color: #ffffff; 
-    display: flex;
-    width: 35%;
-    flex-direction: column;
-    float: right;
-    margin-bottom: 2%;
-    padding: 1% 1% 0.7% 1%;
-}
-.comment{
-    background-color: #ffffff; 
-    width: 100%;
-    min-height: 15vh;
-    display: flex;
-    flex-direction: column;
-    padding: 1% 1%;
-}
-
-.white-button.post-btn {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
 }
 
 /*log in page */
@@ -134,4 +101,197 @@
     width: 80%;
     padding: 8px 0px;
     margin-bottom: 4%;
+}
+
+/*Post Page Styling */
+#posts {
+    width: 100%;
+    background-color: #35D4CB;
+    margin-top: 5%;
+    padding: 4% 0% 6% 0%;
+
+    .post_header {
+        text-align: center;    
+    }
+
+    .author{
+        background-color: #ffffff; 
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        float: left;
+        margin-bottom: 2%;
+        padding: 0.5% 1%;
+        font-weight: 600;
+    }
+    .post-date{
+        background-color: #ffffff; 
+        display: flex;
+        width: 35%;
+        flex-direction: column;
+        float: right;
+        margin-bottom: 2%;
+        padding: 0.5% 1%;
+        font-weight: 600;
+    }
+    .comment{
+        background-color: #ffffff; 
+        width: 100%;
+        min-height: 15vh;
+        display: flex;
+        flex-direction: column;
+        padding: 1% 1%;
+    }
+    
+    .btn-edit {
+        width: 10%;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: #101010;
+        text-decoration: none;
+        font-weight: 700;
+        border-style: solid;
+        border: 0px 5px;
+        text-align: center;
+        font-size: 15px;
+        float: right;
+        margin: -6% 16% 0% 16%;
+    }
+    .btn-edit:hover {
+        background-color: #101010;
+        color: #35D4CB;
+        border-color: #35D4CB;
+    }
+
+    .btn-delete {
+        width: 10%;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: #101010;
+        text-decoration: none;
+        font-weight: 700;
+        border-style: solid;
+        border: 0px 5px;
+        text-align: center;
+        font-size: 15px;
+        float: right;
+        margin: -6% 4% 0% 4%;
+    }
+    .btn-delete:hover {
+        background-color: #101010;
+        color: #35D4CB;
+        border-color: #35D4CB;
+    }
+    .new-post-btn {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: #101010;
+        text-decoration: none;
+        padding: 1% 3%;
+        font-weight: 600;
+        margin-left: 4%;
+        border-style: solid;
+        border: 0px 5px;
+    }
+    .new-post-btn:hover {
+        background-color: #101010;
+        color: #35D4CB;
+        border-color: #35D4CB;
+    }
+
+}
+
+/* Create new post page */
+.btn-back-to-post {
+    width: 10%;
+    background-color: #101010;
+    border-color: #101010;
+    color: #35D4CB;
+    text-decoration: none;
+    font-weight: 700;
+    border-style: solid;
+    border: 0px 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: .5% 1%;
+}
+.btn-back-to-post:hover {
+    background-color: #ffffff;
+    color: #101010;
+    border-color: #ffffff;
+}
+    
+/* Editing post page */
+.post-box {
+    width: 90%;
+    padding: 1%;
+    min-height: 30vh;
+}
+.editing-posts-page {
+    padding: 3% 0% 5% 0%;
+}
+
+/*Edit Profile Page*/
+.field-2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 2%;
+}
+.field-3 {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 40%;
+    padding-bottom: 2%;
+}
+.field-4 {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 40%;
+    margin: 0% 10%;
+    padding-bottom: 2%;
+}
+.field-5 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-bottom: 2%;
+}
+.position-user {
+    margin-top: 5%;
+}
+.position-user.back {
+    margin-top: 12%;
+    width: 90%;
+}
+.btn-update-profile {
+    width: 90%;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #101010;
+    text-decoration: none;
+    padding: 2% 4%;
+    font-weight: 600;
+    margin: 4% 0% 5% 5%;
+    border-style: solid;
+    border: 0px 5px;
+}
+.btn-update-profile:hover {
+    background-color: #101010;
+    color: #35D4CB;
+    border-color: #35D4CB;
+}
+input {
+    padding: 1% 3% 1% 1%;
+}
+
+/*Password reset*/
+.forgot-password {
+    width: 60%;
+}
+.btn-multi-links {
+    font-weight: 600;
+    color: #101010;
 }

@@ -1,10 +1,10 @@
-<div class="blue-container">
-  <%= render @post %>
 
-  <div>
-    <%= link_to "Edit Post", edit_post_path(@post), class:"white-button" %> |
-    <%= link_to "Back to posts", posts_path, class:"white-button" %>
+<%= render @post %>
 
-    <%= button_to "Delete", @post, method: :delete, class:"white-button" %>
-  </div>
+<div>
+  <%= link_to "Edit Post", edit_post_path(@post), class:"white-button" %> |
+  <%= link_to "Back to posts", posts_path, class:"btn-back-to-post" %>
+
+  <%= button_to "Delete", @post, method: :delete, class:"white-button" %>
 </div>
+

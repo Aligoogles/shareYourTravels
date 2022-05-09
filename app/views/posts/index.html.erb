@@ -1,17 +1,20 @@
-<div class="blue-container">
-  <div id="posts">
-    <h1 class="post_header">Chat and Share Your Travel Experiences</h1>
-    <br />
-    <% @posts.each do |post| %>
-      <%= render post %>
-      <p class="posting-layout">
-        <% if current_user.email == post.author %>
-          <%= link_to "Edit Post", edit_post_path(post), class:"white-button post-btn" %> 
-          <%= button_to "Delete", post, method: :delete, class:"white-button post-btn" %>
-        <% end %>
-      </p>
-    <% end %>
-  </div>
+<div id="posts">
+  <h1 class="post_header">Chat and Share Your Travel Experiences</h1>
+  <br />
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <% if current_user.email == post.author %>
+        <div>
+          <%= link_to "Edit Post", edit_post_path(post), class:"btn-edit" %> 
+          <%= button_to "Delete", post, method: :delete, class:"btn-delete" %>
+        </div>
+      <% end %>
+    </p>
+  <% end %>
 
-  <%= link_to "New Post", new_post_path, class:"white-button" %>
+  <%= link_to "New Post", new_post_path, class:"new-post-btn" %>
 </div>
+
+
+

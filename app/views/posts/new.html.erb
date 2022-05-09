@@ -1,11 +1,11 @@
 <div class="blue-container">
-  <h1>New post</h1>
+  <h1 class="headings">Create new post</h1>
 
   <%= render "form", post: @post %>
 
   <br>
 
-  <div>
-    <%= link_to "Back to posts", posts_path, class:"white-button" %>
+  <div class="bottom-padding">
+    <%= link_to "Back to posts", posts_path, class:"btn-back-to-post" %>
   </div>
 </div>
