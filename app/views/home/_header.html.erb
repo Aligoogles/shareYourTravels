@@ -1,29 +1,29 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #4CE0BD; padding: 0px;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <%= image_tag "Logo.png", height:140, width: 140 %>
+    <a class="navbar-brand" style="padding: 0px;" href="/">
+      <%= image_tag "Logo_Share_your_Travels.png", height: 140, width: 140, margin: 0 %>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
       <ul class="navbar-nav">
         <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to 'Chat', posts_path, class:"nav-link active" %>
+          <li class="nav-item" >
+            <%= link_to 'CHAT', posts_path, class:"nav-link active" %>
           </li>
           <li class="nav-item">
-            <%= link_to 'Edit Profile', edit_user_registration_path, class:"nav-link active" %>
+            <%= link_to 'EDIT PROFILE', edit_user_registration_path, class:"nav-link active" %>
           </li>
           <li class="nav-item">
-            <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:"nav-link active" %>
+            <%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete, class:"nav-link active" %>
           </li>
           <% else %>
           <li class="nav-item">
-            <%= link_to 'Sign Up', new_user_registration_path, class:"nav-link active" %>
+            <%= link_to 'LOG IN', new_user_session_path, class:"nav-link active" %>
           </li>
           <li class="nav-item">
-            <%= link_to 'Sign In', new_user_session_path, class:"nav-link active" %>
+            <%= link_to 'SIGN UP', new_user_registration_path, class:"nav-link active" %>
           </li>
         <% end %>
       </ul>

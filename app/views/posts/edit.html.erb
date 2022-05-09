@@ -1,9 +1,13 @@
-<h1>Editing post</h1>
+<div class="blue-container">
+  <h1>Editing post</h1>
 
-<%= render "form", post: @post %>
+  <%= render "form", post: @post %>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Back to posts", posts_path %>
+  <div>
+    <%= link_to "Back to posts", posts_path, class:"white-button" %>
+  </div>
+
 </div>
+

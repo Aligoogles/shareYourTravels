@@ -1,42 +1,86 @@
-
 @import "bootstrap";
  body {
-    /*background-image: url("background_1.jpg"); /* Background image for all pages */
+    background-image: url("background_1.jpg"); /* Background image for all pages */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
-
-.jumbotron {
+.blue-container {
     width: 100%;
     margin: 6% 0% ;
-    padding: 5%;
+    padding: 2% 4% 5% 4%;
     background-color: #35D4CB;
 }
+/* Buttons */
 .btn.btn-primary.btn-lg {
-    background-color: #000000;
-    border-color: #000000;
+    background-color: #101010;
+    border-color: #101010;
     margin-top: -5%;
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 .btn.btn-primary.btn-lg:hover {
     background-color: #35D4CB;
     transform: scale(1.0);
     border-color: #35D4CB;
 }
+.black-button {
+    background-color: #101010;
+    border-color: #101010;
+    color: #35D4CB;
+    text-decoration: none;
+    padding: 1% 3%;
+    font-weight: 600;
+    margin: 1% 0%;
+    border-style: solid;
+    border: 0px 5px;
+}
+.black-button:hover {
+    background-color: #ffffff;
+    border-color: #35D4CB;
+    color: #35D4CB;
+    border-style: solid;
+    border: 0px 5px;
+}
+.white-button {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #101010;
+    text-decoration: none;
+    padding: 1% 3%;
+    font-weight: 600;
+    margin: 1% 0%;
+    border-style: solid;
+    border: 0px 5px;
+}
+.white-button:hover {
+    background-color: #101010;
+    color: #35D4CB;
+    border-color: #35D4CB;
+}
+
+.black-button.login-signup {
+    margin: 2% 0% 5% 0%;
+}
+
+
+/* NavBar */
+.container-fluid {
+    padding: 0px;
+}
+.nav-item {
+    margin: 0px 15px;
+    background-color: #101010;
+}
+
 
 /*Post Page Styling */
 #posts {
     width: 100%;
-    margin: 6% 0% ;
-    padding: 5%;
     background-color: #35D4CB;
+    margin-top: 5%;
 }
 .post_header {
-    text-align: center;
-}
-.post_container {
-    padding: 3%;
+    text-align: center;    
 }
 .author{
     background-color: #ffffff; 
@@ -44,7 +88,7 @@
     width: 60%;
     flex-direction: column;
     float: left;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     padding: 1% 1% 0.7% 1%;
 }
 .post-date{
@@ -53,14 +97,41 @@
     width: 35%;
     flex-direction: column;
     float: right;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     padding: 1% 1% 0.7% 1%;
 }
 .comment{
     background-color: #ffffff; 
     width: 100%;
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     flex-direction: column;
     padding: 1% 1%;
+}
+
+.white-button.post-btn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/*log in page */
+.log-in-sign-up-screen {
+    width: 60%;
+    margin: 6% 20% ;
+    padding: 2% 4% 5% 4%;
+    background-color: #35D4CB;
+}
+
+.fields {
+    width: 100%;
+    padding: 8px 0px;
+    margin-bottom: 4%;
+}
+.fields-1 {
+    width: 80%;
+    padding: 8px 0px;
+    margin-bottom: 4%;
 }
