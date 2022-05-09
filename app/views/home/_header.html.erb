@@ -3,13 +3,13 @@
     <a class="navbar-brand" style="padding: 0px; " href="/">
       <%= image_tag "Logo_Share_your_Travels.png", height: 140, width: 140, margin: 0 %>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler bg-dark p-4 " type="button" data-bs-toggle="collapse " data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation ">
+      <span class="navbar-toggler-icon "></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ">
         <% if user_signed_in? %>
-          <li class="nav-item" >
+          <li class="nav-item " >
             <%= link_to 'CHAT', posts_path, class:"nav-link active" %>
           </li>
           <li class="nav-item">

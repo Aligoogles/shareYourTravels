@@ -50,7 +50,7 @@
 .black-button:hover {
     background-color: #ffffff;
     border-color: #35D4CB;
-    color: #35D4CB;
+    color: #101010;
     border-style: solid;
     border: 0px 5px;
 }
@@ -78,12 +78,12 @@
 /* NavBar */
 .container-fluid {
     padding: 0px;
-}
-.nav-item {
-    margin: 0px 15px;
-    background-color: #101010;
-}
 
+    .nav-item{
+        margin: 0px 15px;
+        background-color: #101010;
+    }
+}
 /*log in page */
 .log-in-sign-up-screen {
     width: 60%;
@@ -293,5 +293,6 @@ input {
 }
 .btn-multi-links {
     font-weight: 600;
+    text-decoration: none;
     color: #101010;
 }
