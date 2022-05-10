@@ -1,5 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+post_1:
+  comment: I went to Paris
+  post_date: 2022-05-04
+  author: Ali
+
+post_2:
+  comment: I went to Italy
+  post_date: 2022-05-05
+  author: Aelita
+
 one:
   comment: MyString
   post_date: 2022-05-07

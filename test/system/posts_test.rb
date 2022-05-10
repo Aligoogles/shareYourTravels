@@ -6,7 +6,7 @@ class PostsTest < ApplicationSystemTestCase
   end
 
   test "visiting the index" do
-    visit posts_url
+    visit home_url
     assert_selector "h1", text: "Posts"
   end
 
@@ -36,10 +36,10 @@ class PostsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "should destroy Post" do
+  test "should Delete Post" do
     visit post_url(@post)
-    click_on "Destroy this post", match: :first
+    click_on "Delete this post", match: :first
 
-    assert_text "Post was successfully destroyed"
+    assert_text "Post was successfully Deleted"
   end
 end

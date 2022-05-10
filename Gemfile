@@ -52,6 +52,8 @@ gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 
 # User profile management
 gem 'devise', '~> 4.8', '>= 4.8.1'
+
+
 #End of extra items added by student 21113131
 
 
@@ -61,6 +63,8 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  # student 21113131 added factory bot to have some fake data for testing
+  gem "factory_bot_rails"
 end
 
 group :development do
@@ -79,4 +83,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  # student 21113131 added rspec for testing
+  gem "rspec-rails"
 end
