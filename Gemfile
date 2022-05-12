@@ -54,7 +54,7 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'jquery-rails'
 
 #webpacker
-gem 'webpacker', '~> 5.4', '>= 5.4.3'
+#gem 'webpacker', '~> 5.4', '>= 5.4.3'
 
 #font awesome
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
