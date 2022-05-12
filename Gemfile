@@ -60,7 +60,7 @@ gem 'jquery-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
 
 # like button
-gem 'acts_as_votable', '~> 0.13.2'
+#gem 'acts_as_votable', '~> 0.13.2'
 
 #End of extra items added by student 21113131
 
