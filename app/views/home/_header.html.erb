@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #4CE0BD; padding: 0px;">
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #4CE0BD; padding: 0px;">
   <div class="container-fluid">
     <a class="navbar-brand" style="padding: 0px; " href="/">
-      <%= image_tag "Logo_Share_your_Travels.png", height: 140, width: 140, margin: 0 %>
+      <%= image_tag "Logo_Share_your_Travels.png", height: 140, width: 140, margin: 0, class:"logo-img"%>
     </a>
-    <button class="navbar-toggler bg-dark p-4 " type="button" data-bs-toggle="collapse " data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation ">
+    <button class="navbar-toggler bg-dark p-4" type="button" data-bs-toggle="collapse " data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation ">
       <span class="navbar-toggler-icon "></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
       <ul class="navbar-nav ">
         <% if user_signed_in? %>
           <li class="nav-item " >

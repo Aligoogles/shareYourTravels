@@ -3,8 +3,20 @@ class PostsController < ApplicationController
 
   # GET /posts or /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.order(cached_votes_score: :desc)
   end
+
+  #like button
+  def upvote
+    @post = Post.find(params[:id])
+    if current_user.voted_up_on? @post
+      @post.unvote_by current_user
+    else
+      @post.upvote_by current_user
+    end
+    render "vote.js.erb"
+  end
+
 
   # GET /posts/1 or /posts/1.json
   def show

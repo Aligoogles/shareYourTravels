@@ -1,5 +1,8 @@
 @import "bootstrap";
- body {
+@import "font-awesome";
+ 
+body {
+    min-height: 100vh;
     background-image: url("background_1.jpg"); /* Background image for all pages */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -84,6 +87,7 @@
         background-color: #101010;
     }
 }
+
 /*log in page */
 .log-in-sign-up-screen {
     width: 60%;
@@ -296,3 +300,60 @@ input {
     text-decoration: none;
     color: #101010;
 }
+
+
+/*Media Query*/
+@media screen and (max-width: 768px) {
+    .all-btn {
+        margin-top: 50px;
+    }
+
+    #posts {
+        .post-date {
+            width: 46%;
+            margin-top: 5%;
+        }
+        .author {
+            width: 51%;
+            margin-top: 5%;
+        }
+        p {
+            font-size: 13px;
+        }
+  
+        .btn-edit {
+            width: 18%;
+            font-size: 12px;
+            margin: -4% 4% 0% 4%;
+        }
+
+
+        .btn-delete {
+            width: 18%;
+            font-size: 12px;
+            
+            margin: -4% 4% 0% 4%;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 394px){
+    
+    #posts{
+        .btn-edit {
+            width: 22%;
+            font-size: 12px;
+            margin: -4% 4% 0% 4%;
+        }
+
+        .btn-delete {
+            width: 22%;
+            font-size: 12px;
+            
+            margin: -4% 4% 0% 4%;
+        }
+    }
+
+ }
