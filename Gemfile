@@ -40,7 +40,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-#gem "sassc-rails"
+gem "sassc-rails"
 
 
 # Start of extra items added by student 21113131
@@ -49,18 +49,6 @@ gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 
 # User profile management
 gem 'devise', '~> 4.8', '>= 4.8.1'
-
-# jquery
-gem 'jquery-rails'
-
-#webpacker
-#gem 'webpacker', '~> 5.4', '>= 5.4.3'
-
-#font awesome
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
-
-# like button
-#gem 'acts_as_votable', '~> 0.13.2'
 
 #End of extra items added by student 21113131
 
@@ -91,7 +79,7 @@ end
 
 group :production do
 
-# Postgresql using for Heroku deployment
+# Postgresql using for Heroku deployment added by student 21113131
 gem 'pg', '~> 1.3', '>= 1.3.5'
 
 end
